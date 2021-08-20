@@ -1,0 +1,683 @@
+header
+{
+    min-height: 100px;
+    background-color: #C03221;
+}
+
+/*************************************/
+
+#logo
+{
+    height: 100px;
+    display: block;
+}
+
+#logo:hover
+{
+    cursor: pointer;
+}
+
+/*************************************/
+
+#container_menu
+{
+    width: 100%;
+    display: none;
+    flex-flow: column nowrap;
+    color: #F7F7FF;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+#accueil,
+#catalogue_voiture,
+#contact,
+#info
+{
+    padding: 20px 0 20px 0;
+}
+
+#accueil:hover,
+#catalogue_voiture:hover,
+#contact:hover,
+#info:hover
+{
+    color: #F7F7FF;
+    cursor: pointer;
+    background-color: rgba(0,0,0,.5);
+    transition: background-color .5s linear;
+}
+
+#container_menu a span
+{
+    display: none;
+}
+
+/*************************************/
+
+#icone_menu 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+#icone_menu img
+{
+    width: 50px;
+    height: 50px;
+}
+
+/*************************************/
+
+/* NOSCRIPT */
+#noscript span
+{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #C03321;
+}
+
+#container_principal
+{
+    width: 100%;
+}
+
+/*************************************/
+
+#container_accueil
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+#diapo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+#image_pub
+{
+    width: 100%;
+}
+
+#button_nos_vehicule
+{
+    width: 100%;
+}
+
+#button_nos_vehicule p
+{
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: #F7F7FF;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #C03221;
+}
+
+#button_nos_vehicule div
+{
+    padding: 25px 0 25px 0;
+    background-color: #E8E8E8;
+}
+
+#button_nos_vehicule button
+{
+    display: block;
+    width: 30%;
+    padding: 15px;
+    margin: 2% auto;
+    font-family: 'Abel';
+    font-size: 1.2em;
+    color: #F7F7FF;
+    background-color: #C03221;
+    border: 1px #C03221 solid;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #12130F;
+    transition: linear background-color .5s;
+}
+
+#button_nos_vehicule button:hover,
+#button_nos_vehicule button:focus
+{
+    cursor: pointer;
+    color: #C03221;
+    background-color: #F7F7FF;
+    transition: linear background-color .5s, linear color .5s;
+}
+
+#button_nos_vehicule button:active
+{
+    color: #F7F7F7;
+    background-color: #C03221;
+}
+
+#prestations
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#prestations p
+{
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: #F7F7FF;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #C03221;
+}
+
+#prestations div 
+{
+    width: 100%;
+    margin: 0;
+    padding: 25px 0 25px 0;
+    text-align: center;
+}
+
+#prestations div:nth-child(odd)
+{
+    background-color: #F7F7FF;
+}
+
+#prestations img
+{
+    width: 100px;    
+}
+
+#prestations div span
+{
+    font-size: 1.2em;
+}
+
+/*************************************/
+
+#container_catalogue
+{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #E8E8E8;
+}
+
+#container_catalogue > p
+{
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #F7F7FF;
+    background-color: #C03221;
+}
+
+#voiture
+{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 5% auto;
+    background-color: #C03221;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 1px 5px #12130F;
+}
+
+@media screen and (min-width: 600px) and (max-width: 780px)
+{
+    #voiture 
+    {
+        width: 70%;
+    }
+}
+
+#voiture > span
+{
+    width: 100%;
+    display: block;
+    padding: 10px 0 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+    color: #F7F7FF;
+    background-color: #C03221;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#photo
+{
+    width: 100%;
+    border-right: 0.75px #C03221 solid;
+    border-left: 0.75px #C03221 solid;
+    border-bottom: 2px #E8E8E8 solid;
+    box-sizing: border-box;
+}
+
+#photo img
+{
+    width: 100%;
+    display: block;
+    filter: brightness(130%) saturate(1);
+}
+
+#info_vehicule
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #F7F7FF;
+}
+
+#caracteristiques
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 0.75px #C03221 solid;
+    border-left: 0.75px #C03221 solid;
+    border-bottom: 0.75px #C03221 solid;
+    box-sizing: border-box;
+}
+
+#caracteristiques div
+{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#caracteristiques div:nth-child(odd)
+{
+    border-right: 2px #E8E8E8 solid;
+    border-top: 2px #E8E8E8 solid;
+    border-bottom: 2px #E8E8E8 solid;
+}
+
+#caracteristiques div:nth-child(even)
+{
+    border-left: 2px #E8E8E8 solid;
+    border-top: 2px #E8E8E8 solid;
+    border-bottom: 2px #E8E8E8 solid;
+}
+
+#caracteristiques div:nth-child(11)
+{
+    width: 100%;
+    transition: background-color .5s linear;
+    border-top: 2px #E8E8E8 solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#caracteristiques div:nth-child(11):hover
+{
+    background-color: #C03221;
+    transition: background-color .5s linear;
+}
+
+#caracteristiques div:nth-child(11):hover span
+{
+    color: #F7F7FF;
+    transition: color .5s linear;
+}
+
+#caracteristiques div span:nth-child(odd)
+{
+    width: 100%;
+    font-size: 1.2em;
+    color: #C03221;
+    padding: 10px 0 5px 0;
+}
+
+#caracteristiques div span:nth-child(even)
+{
+    width: 100%;
+    font-size: 1.2em;
+    color: #12130F;
+    padding: 5px 0 10px 0;
+}
+
+#caracteristiques div:nth-child(11) span
+{										
+    font-size: 1.3em;
+    color: #C03321;
+    padding: 15px 0 15px 0;
+    transition: color .5s linear;
+}
+
+/*************************************/
+
+#contact_note
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
+    color: #C03221;
+    font-size: 1em;
+    text-align: center;
+    background-color: #E8E8E8;
+}
+
+#titre_formulaire
+{
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    color: #F7F7FF;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #C03221;
+}
+
+#formulaire_contact
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+#formulaire_contact label
+{
+    width: 80%;
+    margin: 2% auto 1%;
+    color: #C03221;
+    font-size: 1.2em;
+}
+
+#formulaire_contact input
+{
+    width: 80%;
+    height: 35px;
+    margin: 0 auto 5%;
+    font-family: 'Abel';
+    font-size: 1.1em;
+    color: #12130F;
+    background-color: #F7F7FF;
+    border: 1px #C03221 solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formulaire_contact input:hover,
+#formulaire_contact input:focus
+{
+    outline: none;
+}
+
+#formulaire_contact textarea
+{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto 5%;
+    resize: none;
+    font-family: 'Abel';
+    font-size: 1.1em;
+    color: #12130F;
+    background-color: #F7F7FF;
+    border: 1px #C03221 solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#formulaire_contact textarea:hover,
+#formulaire_contact textarea:focus
+{
+    outline: none;
+}
+
+#formulaire_contact button
+{
+    width: 30%;
+    margin: 2% auto 5%;
+    padding: 15px;
+    font-family: 'Abel';
+    font-size: 1.1em;
+    color: #F7F7F7;
+    background-color: #C03221;
+    border: 1px #C03221 solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px#12130F;
+    transition: linear background-color .5s;
+}
+
+#formulaire_contact button:hover,
+#formulaire_contact button:focus
+{
+    color:  #C03221;
+    background-color: #F7F7FF;
+    outline: none;
+    cursor: pointer;
+    transition: linear background-color .5s;
+}
+
+#formulaire_contact button:active
+{
+    color: #F7F7F7;
+    background-color: #C03221;
+}
+
+/*************************************/
+
+#container_info
+{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#coordonnees
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#coordonnees p
+{
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 15px 0 15px 0;
+    color: #F7F7FF;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #C03221;
+}
+
+#coordonnees div
+{
+    width: 100%;
+    margin: 0;
+    padding: 25px 0 25px 0;
+    text-align: center;
+    background-color: #F7F7FF;
+}
+
+#coordonnees div:nth-child(even)
+{
+    background-color: #e8e8e8;
+}
+
+#coordonnees div span
+{
+    font-size: 1.2em;
+}
+
+/* cible que les span contenant (MyCar Garage) */
+#coordonnees span b
+{
+    padding: 10px;
+    color: #C03221;
+}
+
+#coordonnees input
+{
+    width: 100%;
+    padding: 0;
+    font-family: 'Abel';
+    font-size: 1.1em;
+    text-align: center;
+    background-color: #e8e8e8;
+    border:  none;
+}
+
+#coordonnees input:hover,
+#coordonnees input:focus
+{
+    outline:  none;
+}
+
+#coordonnees button
+{
+    width: 30%;
+    margin:  3% auto 5%;
+    padding: 15px;
+    font-family: 'Abel';
+    font-size: 1.1em;
+    text-align: center;
+    color:  #F7F7FF;
+    background-color: #C03221;
+    border: 1px #C03221 solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px#12130F;
+    transition: background-color .5s, color .5s;
+}
+
+#coordonnees button:hover,
+#coordonnees button:focus
+{
+    color:  #C03221;
+    background-color: #F7F7FF;
+    transition: background-color .5s, color .5s;
+    outline: none;
+    cursor: pointer;
+}
+
+#coordonnees button:active
+{
+    color:  #F7F7F7;
+    background-color: #C03221;
+}
+
+#adresse::selection
+{
+    color: #12130F;
+    background-color: #F7F7FF;
+}
+
+#icones_info
+{
+    width: 100px;
+}
+
+#modal
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: opacity .5s linear;
+    background-color: rgba(0,0,0,.5);
+}
+
+#popup
+{
+    width: 70%;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:  5px;
+    border:  1px #C03221 solid;
+    box-sizing: border-box;
+    background-color: #F7F7FF;
+}
+
+#close
+{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color:  #C03221;
+    font-size: 2em;
+}
+
+#close:hover,
+#close:focus
+{
+    cursor: pointer;
+    outline: none;
+}
+
+#text /* text a afficher */
+{
+    font-size: 1.5em;
+    color:  #C03221;
+    text-align: center;
+}
+
+/*************************************/
+
+#footer
+{
+    min-height: 50px;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #C03221;
+}
+
+#footer a
+{
+    color: rgba(0,0,0,.5);
+    font-size: 1em;
+    padding: 15px 10px 15px 10px;
+}
+
+#footer a:hover,
+#footer a:focus
+{
+    cursor: pointer;
+    color: #F7F7FF;
+}
+
+#footer span
+{
+    color: rgba(0,0,0,.5);
+    padding: 15px 10px 15px 10px;
+    font-size: 1.1em;
+}

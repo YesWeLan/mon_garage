@@ -1,0 +1,109 @@
+@keyframes opacity
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes opacity
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+/*************************************/
+
+@keyframes opacity2
+{
+    from
+    {
+        opacity: 100%;
+    }
+
+    to
+    {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opacity2
+{
+    from
+    {
+        opacity: 100%;
+    }
+
+    to
+    {
+        opacity: 0;
+    }
+}
+
+/*************************************/
+
+@keyframes rightToLeft
+{
+    from
+    {
+        transform: translateX(100%);
+    }
+
+    to
+    {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes rightToLeft
+{
+    from
+    {
+        transform: translateX(100%);
+    }
+
+    to
+    {
+        transform: translateX(0);
+    }
+}
+
+/*************************************/
+
+@keyframes leftToRight
+{
+    from
+    {
+        transform: translateX(0);
+    }
+
+    to
+    {
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes leftToRight
+{
+    from
+    {
+        transform: translateX(0);
+    }
+
+    to
+    {
+        transform: translateX(100%);
+    }
+}

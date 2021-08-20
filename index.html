@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8"/>
+	
+	<!-- VIEWPORT -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+	<!-- FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"/>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/> 
+  	<link rel="stylesheet" type="text/css" media="screen and (max-width: 780px)" href="assets/css/smartphone.css"/>
+  	<link rel="stylesheet" type="text/css" media="screen and (min-width: 781px) and (max-width: 1280px)" href="assets/css/tablette.css"/>
+  	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1281px)" href="assets/css/desktop.css"/>   
+	<link rel="stylesheet" type="text/css" href="assets/css/animations.css"/> 
+	
+  	<!-- FAVICON -->
+	<link rel="icon" href="assets/img/fav.ico"/>
+
+	<!-- TITLE -->
+	<title>Mon Garage</title>
+
+</head>
+
+
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<div id="container_logo">
+			<img src="assets/img/logo.png" alt="logo" id="logo" />
+		</div>
+		<div id="container_menu">
+			<a id="accueil">ACCUEIL<span id="lumiere_accueil"></span></a>
+			<a id="catalogue_voiture">NOS VOITURES<span id="lumiere_catalogue_voiture"></span></a>
+			<a id="contact">CONTACT<span id="lumiere_contact"></span></a>
+			<a id="info">INFO<span id="lumiere_info"></span></a>
+		</div>
+		<a href="javascript:void(0);" id="icone_menu" onclick="showMenu()">
+			<img src="assets/img/burger.png" alt="icone menu" />
+		</a>
+	</header>
+
+	<!-- CONTENT -->
+	<div id="container_principal">
+		<!-- SI JS EST DESACTIVE-->
+		<noscript>
+			<div id="noscript"><span>Veuillez Activer Javascript pour naviguer sur le site</span></div>
+		</noscript>
+	</div>
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<a id="accueil_footer">ACCUEIL</a>
+		<span> | </span>
+		<a id="catalogue_voiture_footer">NOS VOITURES</a>
+		<span> | </span>
+		<a id="contact_footer">CONTACT</a>
+		<span> | </span>
+		<a id="info_footer">INFO</a>
+	</footer> 
+
+	<!-- SCRIPT -->
+	<script type="text/javascript" src="assets/js/function.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+	<script type="text/javascript" src="assets/js/ajax.js"></script>
+	<script type="text/javascript" src="assets/js/vehicules.js"></script>
+	
+	</body>
+</html>

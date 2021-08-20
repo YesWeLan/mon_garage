@@ -1,0 +1,35 @@
+*::selection
+{
+    color: white;
+    background-color: #C03221;
+}
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    font-family: 'Abel';
+
+    background-color: #E8E8E8;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: #F7F7FF;
+}

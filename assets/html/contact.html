@@ -1,0 +1,22 @@
+<p id="contact_note"><i>Si vous nous contactez concernant un véhicule,<br/>merci de nous préciser le modèle concerné,<br />sinon n'hésitez pas à nous appeler</i></p>
+
+<div id="container_form">
+
+<p id="titre_formulaire">FORMULAIRE DE CONTACT</p>
+
+	<form id="formulaire_contact">
+
+		<label for="nom">Nom</label>
+		<input name="nom" id="nom_form" type="text" pattern="[a-z]{3,20}" required="required" />
+		
+		<label for="e-mail">E-mail</label>
+		<input name="e-mail" id="email_form" type="email" pattern="^[a-z0-9.\\-_]+[@]{1}[a-z0-9.\\-_]+[.]{1}[a-z]{2,10}$" required="required" />
+
+		<label for="message">Message</label>
+		<textarea name="message" id="message_form" pattern="[A-Za-z0-9]{10,}" required="required"></textarea>
+		
+		<button type="submit" id="submit_form">Envoyer</button>
+
+	</form>
+
+</div>
